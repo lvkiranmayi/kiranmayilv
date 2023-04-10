@@ -1,0 +1,153 @@
+<html>
+<head>
+<title> web design</title>
+<link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+<div class="container">
+     <h2> Tourism </h2>
+         <div class="flex-box">
+          <h1><b>SOFTGRAY</b></h1>
+               <ul>
+                   <li>PRODUCTS</li>
+                   <li>SERVICES</li>
+                    <li>ABOUT</li>
+                      <li>CONTACT</li>
+                       <li>+91 00-0000-0000</li>
+                </ul>
+</div>
+<div class="section">
+             <img src="images\download1.jpg" height="40%" width="100%">
+</div>
+ <div class="layer">
+ <div class="box"><img src="images\icon.jpg"  height="20%" width="20%"><br/><br/>
+ <p style=color:blue>Gujarat offers scenic beauty from Great Rann of Kutch to the hills of Saputara. Gujarat is the one and only place to view pure Asiatic lions in the world.During the Sultanate reign, Hindu craftsmanship mixed with Islamic architecture, giving rise to the Indo-Saracenic style.</p></div>
+ <div class="box"><img  src="images\icon1.jpg"  height="20%" width="20%"><br/><br/>
+ <p style=color:pink>Madhya Pradesh has three UNESCO World Heritage Sites: Bhimbetka, Sanchi and Khajuraho. Pench National Park inspired Rudyard Kipling's 'The Jungle Book' and the real Mowgli was found in Jungle of Seoni. Snooker was invented at Jabalpur.</p>
+ </div>
+ <div class="box"><img  src="images\icon2.jpg"  height="20%" width="20%"><br/><br/>
+ <p style=color:green>Kerala was named by TIME magazine in 2022 among the 50 extraordinary destinations to explore in its list of the World's Greatest Places.</p>
+</div>
+ </div>
+ <div class="layout" >
+ <div class="text">
+ <h2>About Us</h2><br/>
+ <pre>Travel & Tourism is an important economic activity in most countries around the world. 
+ As well as its direct economic impact, the industry has significant indirect and 
+ induced impacts.Indian Tourism offers a potpourri of different cultures, 
+ traditions, festivals, and places of interest.People who like travelling 
+ enjoy it as an adventure. Whether it's to a nearby city or the other side 
+ of the world, getting out and seeing the world can be an incredibly rewarding 
+ experience. From experiencing new cultures and cuisines, to making life-long 
+ friendships, there are countless reasons to get out and explore.</pre>
+ </div>
+ <div class="image" >
+ <img src="images\download1.jpg">
+</div>
+</div>
+</div>
+<div class="box1">
+ <script>
+       function validpassword(){
+	          var password=document.myform.pass1.value  
+	          var cpassword=document.myform.pass2.value
+	   
+	       if(password.length<6){
+		         alert("Enter minimum 6 digits")
+		         return false
+		   }
+		   
+		  if(password==cpassword){
+		       return true
+             }
+          else{
+		   alert("password & confirm-password must be same")
+		    return false 
+		   } 			 
+	   }
+	   
+	   
+	   function validname(){
+	          var Name=document.myform.name1.value
+	   
+	           if(Name=="null"||Name==""){
+			          alert("enter a proper name")
+			          return false
+			   }
+	   }
+	   
+	   function validmail(){
+	         var Email=document.myform.email.value
+			 var atposition=Email.indexOf("@")
+			 var dotposition=Email.lastIndexOf(".")
+	   
+	     if(atposition<1 || dotposition<atposition+2 || dotposition+2>=Email.length){
+		 
+		      alert("enter a proper email")
+			  return false
+		 }
+	   
+	   }
+	   function validdate(){
+	        var currentdate=new Date()
+	        var dob=new Date(document.myform.date.value)
+			
+		 if(dob>=currentdate){
+		 alert("enter a correct date")
+		 return false
+		 }	
+	   }
+	   
+	   function validmob(){
+	        var Number=document.myform.mobile.value
+			
+		if(Number.length == 10){
+		    return true
+		
+		}	else{
+		    alert("enter 10 digit number")
+			return false
+		
+		}
+	   
+	   
+	   
+	   }
+        
+      </script>
+	  <center>
+	  <div class="valid">
+   <form name="myform" onsubmit="return validmob()" action="output.html"><br/>
+   
+      Password : <input type="password" name="pass1"/><br/><br/>
+  confirm password : <input type="password" name="pass2"/><br/><br/>
+    
+     <input type="submit" value="check"/></h1><br/><br/>
+	 
+	Your Name : <input type="text" name="name1" pattern="[a-z,A-Z ]{3,}"><br/><br/>
+	   
+	    <input type="submit" value="check"/><br/><br/>
+		
+		
+		
+		Your email : <input type="email" name="email" pattern="[a-z @.]{1,}" required/></br><br/>
+		
+		<input type="submit" value="check"/><br/><br/>
+		
+		
+		Enter Your D.O.B : <input type="date"  name="date"required/><br/><br/>
+	   
+	    <input type="submit" value="check"/><br/><br/>
+		
+		
+		Mobile Number :<input type="number" name="mobile" required/><br/><br/>
+		
+		 <input type="submit" value="check"/><br/><br/>
+		
+   </form>
+</div>
+  </center>
+  </div>
+  </div>
+</body>
+</html>
